@@ -1,0 +1,7 @@
+<?php
+//url de la recherche à construire
+$chaine=file_get_contents("../json/entreprises.json");
+$data=json_decode($chaine, TRUE);
+$nb_resultats=$data["nhits"];
+$resultats=$data["records"];
+?>
